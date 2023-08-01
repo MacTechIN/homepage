@@ -1,0 +1,67 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+#container{
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+
+    background-color: blue;
+}
+
+
+#logo{
+    float: left;
+    width: 250px;
+    height: 100px;
+    background-color: indigo;
+}
+
+nav{
+    float: right;
+    width: 900px;
+    height: 100px;
+    background-color: green;
+}
+
+#showProject{
+    clear: both;
+    width: 100%;
+    height: 300px;
+    background-color: orange;
+}
+
+#contents {
+    width: 100%;
+    height: 300px;
+}
+
+#tabMenu{
+    float: right;
+    width: 50%;
+    height: 300px;
+    background-color: pink;
+}
+
+#links{
+    float:right;
+    width: 50%;
+    height: 300px;
+    background-color: skyblue;
+}
+
+footer{
+    height: 100px;
+    background-color: gray;
+}
