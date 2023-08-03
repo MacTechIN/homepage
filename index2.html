@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sam's Developing Portfolio</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () { 
+                $("ul").fadeIn(500);
+                
+            });
+        });
+
+        $(document).ready(function () {
+            
+            $("button").click(function (e) { 
+                e.preventDefault();
+                $("header").slideDown();
+                
+            });
+        });
+
+        $(document).ready(function () {
+            $("button").click(function () { 
+               
+                $("#expTitle").text("나의 개발 경험");
+
+            
+            });
+            
+        });
+
+
+
+
+    </script>
+
+</head>
+<body>
+   <div id="container"> 
+    <header> Welcome to DEV World
+        <div id="logo">
+            <h2>SamLEE의 개발 포트폴리오</h2>
+        </div>
+        <nav>
+            <h2>연락처 : 0105813-6550</h2>
+        </nav>
+    </header>
+
+    
+    <div id="showProject">
+        <h2 id="expTitle">Project display Area</h2>
+        <br>
+        <button id="mhyExp">개발경험</button>
+        <br>
+        <ul id="devExp">
+            <li>iOS SWIFTUI</li>
+            <li>C ++,JAVA, C#, Python</li>
+            <li>Unity3D</li>
+            <li>MES System</li>
+            <li>Computer  Vision </li>
+        </ul>
+        
+    </div>
+
+    <div id="contents">
+        <div id="tabMenu">
+            <h3>tab menu area</h3>
+        </div>
+        <div id="links">
+            <h3>links area</h3>
+        </div>
+    </div>
+
+    <footer>
+        <h3>footer area</h3>
+    </footer>
+   </div>
+</body>
+</html>

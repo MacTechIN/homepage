@@ -1,83 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sam's Developing Portfolio</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./jquery-3.1.1.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("button").click(function () { 
-                $("ul").fadeIn(500);
-                
-            });
-        });
+  <head>
+    <title>Sam's Developer's Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700"rel="stylesheet'>
+    <link rel="stylesheet" href="./css/style2.css" />
+  </head>
+  <body>
+    <div class="menu-responsive">
+      <nav>
+          <ul>
+              <li><a class="scroll" href="#about">About</a></li>
+              <li><a class="scroll" href="#skills">Skills</a></li>
+              <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+              <li><a class="scroll" href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
 
-        $(document).ready(function () {
-            
-            $("button").click(function (e) { 
-                e.preventDefault();
-                $("header").slideDown();
-                
-            });
-        });
+  <header>
+      <div class="container">
+          <div class="row">
+              <div class="header__top">
+                  <div class="col-md-6 header__top-brand">
+                      <h1><span class="bold">Let's Develop</span> with Sam</h1>
+                      <hr>
+                  </div>
+                  <nav class="col-md-6 header__top-nav hidden-md-down">
+                      <ul>
+                          <li><a class="scroll" href="#about">About</a></li>
+                          <li><a class="scroll" href="#skills">Skills</a></li>
+                          <li><a class="scroll" href="#portfolio">Portfolio</a></li>
+                          <li><a class="scroll" href="#contact">Contact</a></li>
+                      </ul>
+                  </nav>
+                  <nav class="col-md-6 header__top--responsive hidden-lg-up">
+                      <ul>
+                          <li><a class="menu-bars" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a></li>
+                      </ul>
+                  </nav>
+              </div>
+          </div>
 
-        $(document).ready(function () {
-            $("button").click(function () { 
-               
-                $("#expTitle").text("나의 개발 경험");
+          <div class="header__content">
+              <p class="bold">Hi Guys !</p>
+              <p>I'm a lift-time-ever <span class="bold"> S/W Developer</span> & <span class="bold">Big Data Scientist</span></p>
+              <a class="btn scroll" href="#portfolio">See My Work</a>
+          </div>
 
-            
-            });
-            
-        });
+          <div class="header__arrow">
+              <a class="scroll" href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+          </div>
 
+      </div>
+  </header>
 
+  <section id="about">
+      <div class="container">
+          <h2>Who I Am</h2>
+          <hr>
+          <img src="./images/Sam_portrate.png" alt="Code with faraz">
+          <p class="lead"> Programmer & Developer</p>
+          <p>I'm <span class="bold">Sam</span> LEE, a <strong>Big Data Scientist</strong> and <strong>SW Developer</strong> from <a href="https://www.google.fr/maps/place/Seoul/data=!3m1!1e3!4m15!1m8!3m7!1s0x357ca2012d5c39cf:0x7e11eca1405bf29b!2sSeoul!3b1!8m2!3d37.5518911!4d126.9917937!16zL20vMGhzcWY!3m5!1s0x357ca2012d5c39cf:0x7e11eca1405bf29b!8m2!3d37.5518911!4d126.9917937!16zL20vMGhzcWY?hl=fr&entry=ttu" target="_blank">Seoul</a>, Korea.</p>
+          <p>I love <strong>studying</strong> to support against the world proverties </p>
+          <p>I <strong>Rearch</strong> and <strong>Develop</strong> modern and responsive Data Analsys.</p>
+          <p>Aside from development, I like learning languages, riding bike (human and android side ;-p).</p>
+      </div>
+  </section>
 
+  <section id="skills">
+      <div class="container">
+          <h2>My Skills</h2>
+          <hr>
+          <div class="row">
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">80%</div>
+                  <div class="progress-container">
+                      <strong>FrontEnd(HTML,CSS,JS,JQ)</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 80%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">95%</div>
+                  <div class="progress-container">
+                      <strong>Java/Python</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 95%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">90%</div>
+                  <div class="progress-container">
+                      <strong>Data Science</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="skill col-12 col-lg-6">
+                  <div class="skills__percent">90%</div>
+                  <div class="progress-container">
+                      <strong>ML/AI/Computer Vision</strong>
+                      <div class="progress">
+                          <div class="progress-bar" style="width: 90%"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-    </script>
+  <section id="portfolio">
+      <h2>Portfolio</h2>
+      <hr>
+      <div class="container">
+          <div class="portfolio__projects">
+              <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>JS/JQ</h3>
+                              <p>Trained by YSIT.edu</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="#">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>Project Name</h3>
+                              <p>Coming Soon</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="#">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>Project Name</h3>
+                              <p>Coming Soon</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>Project Name</h3>
+                              <p>Coming Soon</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="#">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>Project Name</h3>
+                              <p>Coming Soon</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="#">
+                      </figure>
+                  </div>
+                  <div class="col-lg-4 col-md-6">
+                      <figure>
+                          <figcaption>
+                              <h3>Project Name</h3>
+                              <p>Coming Soon</p>
+                              <a href="#"><i class="fa fa-search-plus" aria-hidden="true"></i></a>
+                          </figcaption>
+                          <img src="#">
+                      </figure>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
-</head>
-<body>
-   <div id="container"> 
-    <header> Welcome to DEV World
-        <div id="logo">
-            <h2>SamLEE의 개발 포트폴리오</h2>
-        </div>
-        <nav>
-            <h2>연락처 : 0105813-6550</h2>
-        </nav>
-    </header>
+  <section id="contact">
+      <div class="container">
+          <p class="lead">Do you like what you see ?</p>
+          <p>Need a <span class="text-animate">SW/HW Developer ?</span></p>
+          <a class="btn" href="mailto:hotnewton@naver.com">Contact Me 82-10-5813-6550</a>
 
-    
-    <div id="showProject">
-        <h2 id="expTitle">Project display Area</h2>
-        <br>
-        <button id="mhyExp">개발경험</button>
-        <br>
-        <ul id="devExp">
-            <li>iOS SWIFTUI</li>
-            <li>C ++,JAVA, C#, Python</li>
-            <li>Unity3D</li>
-            <li>MES System</li>
-            <li>Computer  Vision </li>
-        </ul>
-        
-    </div>
+          <div class="contact__social">
+              <a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href="#" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+              <a href="https://github.com/MacTechIN" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+          </div>
+      </div>
+  </section>
 
-    <div id="contents">
-        <div id="tabMenu">
-            <h3>tab menu area</h3>
-        </div>
-        <div id="links">
-            <h3>links area</h3>
-        </div>
-    </div>
-
-    <footer>
-        <h3>footer area</h3>
-    </footer>
-   </div>
-</body>
+  <section id="footer">
+      <p>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://www.codewithfaraz.com" target="_blank">Faraz Choudhary</a> <i class="fa fa-copyright" aria-hidden="true"></i>2022</p>
+  </section>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://unpkg.com/scrollreveal/dist/scrollreveal.min.js'></script>
+    <script src="script2.js"></script>
+  </body>
 </html>
