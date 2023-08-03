@@ -6,8 +6,27 @@
     <title>Sam's Developing Portfolio</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () { 
+                $("ul").fadeIn(500);
+                $("ul").fadeOut(3000);
+            });
+        });
+
+        $(document).ready(function () {
+            
+            $("button").click(function (e) { 
+                e.preventDefault();
+                $("header").slideDown();
+                
+            });
+        });
 
 
+
+
+    </script>
 
 </head>
 <body>
