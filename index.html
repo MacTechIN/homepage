@@ -10,7 +10,7 @@
         $(document).ready(function () {
             $("button").click(function () { 
                 $("ul").fadeIn(500);
-                $("ul").fadeOut(3000);
+                
             });
         });
 
@@ -21,6 +21,16 @@
                 $("header").slideDown();
                 
             });
+        });
+
+        $(document).ready(function () {
+            $("button").click(function () { 
+               
+                $("#expTitle").text("나의 개발 경험");
+
+            
+            });
+            
         });
 
 
@@ -36,13 +46,13 @@
             <h2>SamLEE의 개발 포트폴리오</h2>
         </div>
         <nav>
-            <h2>Nav area</h2>
+            <h2>연락처 : 0105813-6550</h2>
         </nav>
     </header>
 
     
     <div id="showProject">
-        <h2>Project display Area</h2>
+        <h2 id="expTitle">Project display Area</h2>
         <br>
         <button id="mhyExp">개발경험</button>
         <br>
